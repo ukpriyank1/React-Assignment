@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.idStruc {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1877f2;
+  text-align: center;
+}
+
+.idStruc_cent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 27%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 45px;
+}
+
+.btn_batch {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Decreme {
+  padding: 4px 15px;
+  font-size: 15px;
+  background-color: #0c0c0c;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.Decreme:hover {
+  background-color: #323232;
+}
+
+.Increment {
+  padding: 4px 15px;
+  font-size: 15px;
+  background-color: #323232;
+  border: none;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.Increment:hover {
+  background-color: #323232;
+}
+
+.reset {
+  width: fit-content;
+  margin: 15px 0;
+  padding: 4px 15px;
+  font-size: 15px;
+  background-color: #0c0c0c;
+  border: none;
+  color: #fff;
+  align-self: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: #262626;
+}

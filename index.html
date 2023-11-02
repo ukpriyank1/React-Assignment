@@ -1,0 +1,2209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Js Assignment</title>
+  </head>
+  <style>
+    section {
+      padding: 50px;
+    }
+
+    h2 {
+      margin: 30px 0;
+    }
+
+    div {
+      background-color: grey;
+      border-radius: 15px;
+      padding: 15px;
+      margin-bottom: 30px;
+      margin: 20px 0;
+    }
+
+    div > p {
+      background-color: black;
+      color: #fff;
+      border-left: 5px solid green;
+      padding: 15px;
+      line-height: 25px;
+    }
+
+    img {
+      margin: 20px;
+    }
+
+    ul {
+      margin: 15px 0;
+    }
+
+    .sep {
+      margin: 15px 0;
+    }
+
+    span {
+      background-color: silver;
+      padding: 7px;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <section>
+      <h2>Q-1. What is React Js?</h2>
+      <p>
+        An open-source JavaScript package called React JS is used to create user
+        interfaces, typically for mobile and single-page applications.
+      </p>
+      <p>
+        In React, a user interface is constructed from components. Each of these
+        elements is a user-defined Javascript function.
+      </p>
+      <p>
+        These components can take props (properties) as inputs and return React
+        elements that specify exactly how a certain piece of the UI (user
+        interface) should look in response.
+      </p>
+      <p>
+        Commonly referred to as the root node, a single HTML element serves as
+        the foundation for most React applications.
+      </p>
+
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTi2sducURVC574TKk8-Pn4KV4Urq-Zsglfm2Chqft4FVzapVM"
+        alt="img1"
+      />
+
+      <p>
+        The only method to "change" a React element is to render a new one on
+        the screen because React elements are immutable (cannot be changed).
+        React keeps track of all these element changes in a Virtual DOM.
+      </p>
+
+      <p>
+        Calling the ReactDOM causes elements to be rendered on the screen.The
+        createRoot() method compares the actual and virtual DOM elements with
+        the least amount of modifications possible. In this diffing process, the
+        ReactDOM always tries to avoid reloading the entire page, as
+        demonstrated below:
+      </p>
+
+      <h2>Q-2. What is NPM in React Js?</h2>
+      <p>The Biggest Software Registry (Library) in the World</p>
+      <p>The biggest software registry in the world is npm.</p>
+      <p>There are more than 800,000 code packages in the registry.</p>
+      <p>To share software, open-source developers utilize npm.</p>
+      <p>Npm is often used by businesses to control private growth.</p>
+
+      <h3>Npm usage is free.</h3>
+      <p>Use of npm is free.</p>
+      <p>
+        All npm public software packages are available for download without the
+        need to register or log in.
+      </p>
+      <p>
+        Software can be downloaded and installed using the
+        <strong>CLI (Command Line Client) </strong>provided by npm.
+      </p>
+
+      <div>
+        <h3>Windows Example</h3>
+        <p>C:\>npm install &lt;package&gt; &lt;/package&gt;</p>
+      </div>
+
+      <h3>Installing Node.js with npm</h3>
+      <p>Node.js is installed before npm.</p>
+      <p>
+        This implies that in order to install npm on your machine, you must
+        first install Node.js
+      </p>
+      <p>
+        Visit the official Node.js website at
+        <a href="https://nodejs.org">https://nodejs.org</a> to get the software.
+      </p>
+
+      <h3>Manager of Software Packages</h3>
+
+      <p>
+        When npm was first developed as a package manager for Node.js, it went
+        by the moniker npm (Node Package Manager).
+      </p>
+      <p>Package.json files, which are used to define all npm packages.</p>
+      <p>JSON must be used to format the package.json file's content.</p>
+      <p>
+        The name and version fields must both be included in the definition
+        file.
+      </p>
+
+      <div>
+        <h3>Example</h3>
+        <p>
+          { "name" : "foo", <br />
+          "version" : "1.2.3", <br />
+          "description" : "A package for fooing things", <br />
+          "main" : "foo.js", <br />
+          "keywords" : ["foo", "fool", "foolish"], <br />
+          "author" : "John Doe", "licence" : "ISC" } <br />
+        </p>
+      </div>
+
+      <h3>Taking Care of Dependences</h3>
+      <p>Dependencies can be managed with npm.</p>
+      <p>
+        All of a project's dependencies can be installed using npm (in a single
+        command line).
+      </p>
+      <p>In a package, dependencies are also defined.json.</p>
+
+      <h2>Q-3.What is Role of Node Js in react Js?</h2>
+      <h3>The top 5 benefits of using React Node.js</h3>
+
+      <p>
+        Here are 5 reasons to utilize React and Node js to streamline web
+        development and create highly effective, scalable code.
+      </p>
+
+      <h3>1. Contributes to keeping a high server load</h3>
+      <p>
+        The inclusion of Node in your React project makes it incredibly simple
+        for servers to manage server load balancing and simultaneous network
+        requests.
+      </p>
+
+      <h3>2. Aids in keeping real-time data current</h3>
+      <p>
+        The combination of React with Node js is quite helpful if your app
+        requires real-time data handling or data streaming. This is so that Node
+        can manage ongoing server connections and React can render data on the
+        front end.
+      </p>
+
+      <h3>3. facilitates the creation of single-page applications</h3>
+      <p>
+        You can simply build single-page applications like Gmail and Facebook
+        using React and Node js. Intuitive UI/UX creation is possible with
+        React, and callback-based asynchronous data loading is offered by Node.
+      </p>
+
+      <h3>4. Make creating JSON for your APIs easier</h3>
+      <p>
+        The internet data serialization standard known as JSON, or Javascript
+        Object Notation, aids in the communication of data between a website and
+        a server.
+      </p>
+
+      <p>
+        JSON API is helpful for improving consistency in JSON answer formatting,
+        and its effective caching features can reduce unnecessary server
+        queries. It is quite effective to use the JSON API with Node, which
+        encourages code reuse. Using React, the reusable code becomes shareable.
+      </p>
+
+      <h3>5. MERN stack project technologies</h3>
+
+      <p>
+        MongoDB, Express.js, React.js, and Node.js are the major four
+        technologies used by the MERN Stack application. We can develop
+        applications like e-commerce and financial websites using this stack. To
+        create apps quickly, developers simply need to be familiar with
+        Javascript and JSON in addition to MongoDB, Express.js, Node.js, and
+        React.js.
+      </p>
+
+      <h2>Q-4.What is CLI command In React Js?</h2>
+      <h3>constructing a new program</h3>
+      <p>
+        There are several ways to construct React applications using construct
+        React App.
+      </p>
+      <p>npx script use.</p>
+
+      <div>
+        <p>
+          npx create-react-app &lt;react-app-name&gt; npx create-react-app
+          hello-react-app
+        </p>
+      </div>
+
+      <p>use the package manager npm.</p>
+
+      <div>
+        <p>
+          npm init react-app &lt;react-app-name&gt; npm init react-app
+          hello-react-app
+        </p>
+      </div>
+
+      <p>yarn package management is used.</p>
+
+      <div>
+        <p>
+          yarn init react-app &lt;react-app-name&gt; yarn init react-app
+          hello-react-app
+        </p>
+      </div>
+
+      <h3>deciding on a template</h3>
+      <p>
+        Create React App uses the default template to create a React
+        application. The original code having a specific built-in capability is
+        referred to as a template. The npm package server offers hundreds of
+        templates with a variety of sophisticated capabilities. Users of Create
+        React App can choose a template by using the -template command line
+        switch.
+      </p>
+
+      <div>
+        <p>create-react-app my-app --template typescript</p>
+      </div>
+
+      <p>
+        The cra-template-typescript package from the npm server will be used to
+        create a react app using the command above.
+      </p>
+
+      <h3>setting up a dependence</h3>
+
+      <p>
+        As React uses the project structure suggested by npm and yarn, React
+        dependency packages can be installed using the standard npm or yarn
+        package commands.
+      </p>
+      <p>use the package manager npm.</p>
+
+      <div><p>npm install --save react-router-dom</p></div>
+
+      <p>yarn package management is used.</p>
+
+      <div><p>yarn add react-router-dom</p></div>
+
+      <h3>launching the program</h3>
+
+      <p>
+        Depending on the package management being used in the project, the React
+        application can be launched using the npm or yarn commands.
+      </p>
+
+      <p>use the package manager npm.</p>
+
+      <div><p>npm start</p></div>
+
+      <p>yarn package management is used.</p>
+
+      <div>
+        <p>yarn start</p>
+      </div>
+
+      <p>
+        Before launching the application, set the environment variable HTTPS to
+        true in order to execute it in secure mode (HTTPS). For instance, the
+        command below starts the application in HTTPS mode and sets HTTPS in
+        Windows Command Prompt (cmd.exe).
+      </p>
+
+      <div>
+        <p>set HTTPS=true && npm start</p>
+      </div>
+
+      <h2>Q.5 What is Components in React Js?</h2>
+      <p>
+        One of React's fundamental building blocks is the component. Or, to put
+        it another way, every application you create with React will be built up
+        of what are known as components. Using components makes creating user
+        interfaces considerably simpler. You can see a user interface (UI)
+        divided into numerous separate parts, or components, and work on them
+        independently before merging them all into a parent component to create
+        your final UI.
+      </p>
+
+      <p>
+        As you can see in the figure below, we have dissected the GeeksforGeeks
+        homepage's user interface into its component parts.
+      </p>
+
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20230804155419/gfgdrawio-(1).jpg"
+        alt="img"
+        srcset=""
+      />
+
+      <p>
+        React components essentially return JSX code that specifies what should
+        be displayed on the screen.
+      </p>
+
+      <h3>Component types in ReactJS</h3>
+
+      <p>
+        There are primarily two categories of components in React:
+        <strong>Functional Components:</strong> Javascript functions are what
+        functional components are. Writing a javascript function allows us to
+        build a functional React component. We shall discuss if these functions
+        accept data as parameters later in the lesson. The example below
+        illustrates a React component that is functionally sound:
+      </p>
+
+      <div>
+        &lt;p&gt;function demoComponent() { <br />
+        return (&lt;h1&gt; <br />
+        Welcome Message! <br />
+        &lt;/h1&gt;); <br />
+        }&lt;/p&gt; <br />
+      </div>
+
+      <p>
+        <strong>Class Components:</strong> Compared to functional components,
+        class components are a little more sophisticated. While the class
+        components can cooperate with one another, the functional components in
+        your application are unaware of the other components. Data can be passed
+        across class components by using the pass method. To develop class-based
+        components for React, we can use JavaScript ES6 classes. A React
+        component that uses classes is demonstrated in the example below:
+      </p>
+
+      <div>
+        <p>
+          &lt;p&gt;class Democomponent extends React.Component { render() {
+          return &lt;h1&gt;Welcome Message!&lt;/h1&gt;; } } &lt;/p&gt;
+        </p>
+      </div>
+
+      <p>
+        In the two instances above, we developed components that are identical
+        to one another, and we also described the key distinction between a
+        functional component and a class component. In subsequent lectures, we
+        will learn more about the characteristics of class-based components.
+      </p>
+
+      <p>
+        For the time being, bear in mind that we won't employ functional
+        components until we are certain that they don't need to communicate or
+        collaborate with any other components. This means that while we can
+        combine several functional components under a single functional
+        component, these components do not require data from other components.
+      </p>
+
+      <p>
+        Class-based components can also be used for this purpose, although doing
+        so is not advised because doing so will make your program less
+        effective.
+      </p>
+
+      <h3>Component Rendering in ReactJS</h3>
+
+      <p>
+        User-defined component rendering is also possible with React. React
+        allows us to start an element with a user-defined component and send
+        this element as the first parameter to ReactDOM in order to render a
+        component.The component can be passed as the first argument to the
+        ReactDOM.render() method or rendered directly.
+      </p>
+
+      <p>
+        How to initialize a component to an element is demonstrated by the
+        syntax below:
+      </p>
+
+      <div>
+        <p>const elementName = &lt;ComponentName /&gt;;</p>
+      </div>
+
+      <h2>Q.6 What is Header and Content Components in React Js?</h2>
+
+      <p>
+        An essential component of a website's design is the header. It
+        represents the website's first impression. It offers practical links to
+        other parts of the website that the user might find interesting. In this
+        article, we'll use React.js and Material UI to build a working Header.
+      </p>
+
+      <p>
+        <strong>Approach:</strong> We will start by using some installs to build
+        a simple react app. Using Material-UI, we will create a new Header
+        Component with some decoration. We'll use the Material UI App Bar, which
+        offers screen titles, navigation, and actions, to construct a header.
+        Additionally, we will require an internal ToolBar to set the settings of
+        the child components and position them all horizontally. Then, by
+        importing the freshly built Header into our default Home page,
+        represented by the App.js file, we will make some modifications. Let's
+        now begin to make this.
+      </p>
+
+      <h3>React Application Development And Module Installation:</h3>
+
+      <p>
+        <strong>Step 1:</strong> Use the command below to create a React
+        application:
+      </p>
+
+      <div><p>npx create-react-app foldername</p></div>
+   
+
+    <p>
+      <strong>Step 2: </strong>Use the following command to move to your project
+      folder after creating it, i.e., foldername:
+    </p>
+
+    <div><p>cd foldername</p></div>
+
+    <p>
+      <strong>Step 3:</strong> Execute the following command to install the
+      material-ui modules after building the React.js application.
+    </p>
+
+    <div>
+      <p>
+        npm install @material-ui/core <br />
+        npm install @mui/icons-material <br />
+        npm install @mui/material <br />
+      </p>
+    </div>
+
+    <p>
+      Create a new file called Header.js in the "src" folder of the project.
+      We'll put our header component in this file. The revised
+      <strong>project structure</strong>
+      will now appear as follows:
+    </p>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20211210165458/prjstr.PNG"
+      alt=""
+    />
+
+    <p>
+      <strong>Step 3:</strong> The header component will now be created. We'll
+      use the Material UI App Bar Component.The top App Bar offers information
+      and options relevant to the active screen. Branding, screen names,
+      navigation, and actions all use it. It can change into a navbar or an
+      action bar for the current context. The Material UI Tool Bar functions in
+      conjunction with the AppBar rather than separately like other Material UI
+      components. The settings of the toolbar component are set to the child
+      component, which aligns them all horizontally.
+    </p>
+
+    <h3>Header.js</h3>
+
+    <div>
+      <p>
+        import * as React from "react"; <br />
+        <br />
+        // importing material UI components <br />
+        import AppBar from "@mui/material/AppBar"; <br />
+        import Box from "@mui/material/Box"; <br />
+        import Toolbar from "@mui/material/Toolbar"; <br />
+        import Typography from "@mui/material/Typography"; <br />
+        import Button from "@mui/material/Button"; <br />
+        import IconButton from "@mui/material/IconButton"; <br />
+        import MenuIcon from "@mui/icons-material/Menu"; <br />
+        <br />
+        export default function Header() { <br />
+        return ( <br />
+        &lt;AppBar position="static"&gt;<br />
+        &lt;Toolbar> <br />
+        {/*Inside the IconButton, we <br />
+        can render various icons*/} <br />
+        &lt;IconButton <br />
+        size="large"<br />
+        edge="start"<br />
+        color="inherit"<br />
+        aria-label="menu"<br />
+        sx={{ mr: 2 }} <br />
+        &gt;<br />
+        {/*This is a simple Menu <br />
+        Icon wrapped in Icon */} <br />
+        &lt;MenuIcon /&gt;<br />
+        &lt;/IconButton&gt;<br />
+        {/* The Typography component applies <br />
+        default font weights and sizes */} <br />
+        <br />
+        &lt;Typography variant="h6" <br />
+        component="div" sx={{ flexGrow: 1 }}&gt;<br />
+        GeeksforGeeks Header <br />
+        &lt;/Typography&gt;<br />
+        &lt;Button color="inherit">Login&lt;/Button&gt;<br />
+        &lt;/Toolbar&gt;<br />
+        &lt;/AppBar&gt;<br />
+        ); }
+      </p>
+    </div>
+
+    <p>
+      <strong>Step 4:</strong> Once the Header component has been created, it
+      will be imported into App.js, where the following changes will be made.
+    </p>
+
+    <h3>App.js</h3>
+
+    <div>
+      <p>
+        import React from "react"; <br />
+        import Header from "./Header"; <br />
+        <br />
+        function App() { <br />
+        return ( <br />
+        <br />
+        // Using the newly created Header <br />
+        // component in this main component <br />
+        &gt;Header/&lt;<br />
+        ); <br />
+        } <br />
+        export default App;<br />
+      </p>
+    </div>
+
+    <p>
+      <strong>How to run the program:</strong> Use the following command to
+      launch the program from the project's root directory:
+    </p>
+
+    <div>
+      <p>npm start</p>
+    </div>
+
+    <p>
+      The <strong>output</strong> that appears when you visit
+      http://localhost:3000 in your browser is as follows:
+    </p>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20211213095822/Capture.PNG"
+      alt="img"
+    />
+
+    <h2>
+      Q.7 How to install React Js on Windows, Linux Operating System? How to
+      Install NPM and How to check version of NPM?
+    </h2>
+
+    <p>
+      React JS is an open-source front-end JavaScript library that uses
+      components. It is applied to the development of quick and engaging user
+      interfaces for web-based and mobile apps. React needs less coding and
+      offers more functionality, making it simple to construct dynamic
+      applications. Both large MNCs and recent startups use it.
+    </p>
+
+    <h3>Features of React:</h3>
+
+    <p>
+      1. Reusable Components: Each component in a single React app has its own
+      logic and code, but we can easily reuse components any number of times,
+      saving developers' time and improving the effectiveness of their work.
+    </p>
+    <p>
+      2. Debugging: "React developer tools" make it simple to debug React
+      applications.It is a browser add-on that works with both Chrome and
+      Firefox.
+    </p>
+
+    <h3>Reactjs setup for Windows:</h3>
+
+    <p>
+      Install the Windows Node.js installer as the first step. Select this link.
+      Install the LTS version (located on the left) here. Click the Next button
+      until NodeJS is fully installed after being downloaded, keeping all other
+      settings in tact.
+    </p>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20211013203755/node1.png"
+      alt="img"
+    />
+
+    <p>
+      <strong>Step 2:</strong> Enter the command -> in the command prompt to see
+      if it has been fully installed or not.
+    </p>
+
+    <div>
+      <p>node -v</p>
+    </div>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20211013203241/cmd1.jpg"
+      alt="img"
+    />
+
+    <p>
+      It will provide you with the installed version if the installation
+      completed smoothly.
+    </p>
+    <p>
+      <strong>Step 3:</strong> Execute the following command on the terminal:
+    </p>
+
+    <div><p>npm install -g create-react-app</p></div>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20211013211354/cmd2.jpg"
+      alt="img"
+      srcset=""
+    />
+
+    <p>
+      React will be installed for you worldwide. Run the command to verify that
+      everything worked as planned.
+    </p>
+
+    <div><p>create-react-app --version</p></div>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20211015190556/cmd3.png"
+      alt="img"
+    />
+
+    <p>
+      It will provide you the installed version of the React app if everything
+      went correctly.
+    </p>
+    <p>
+      <strong>Step 4:</strong> Presently Using the command below, create a new
+      folder where you want to create your react app:
+    </p>
+
+    <div><p>mkdir newfolder</p></div>
+
+    <p>
+      <strong> Note:</strong> The name of the folder, newfolder, in the command
+      above can be anything.
+    </p>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20211015194724/Img3.jpg"
+      alt="img"
+    />
+
+    <p>Use the following command to move inside the same folder:</p>
+
+    <div>
+      <p>cd newfolder (your folder name)</p>
+    </div>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20211015195432/IMG5.png"
+      alt="img"
+    />
+
+    <p><strong>Step 5:</strong> Execute the command -> inside this folder.</p>
+
+    <div>
+      <p>create-react-app reactfirst YOUR_APP_NAME</p>
+    </div>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20211015201442/immgg.jpg"
+      alt=""
+    />
+
+    <p>The installation of the necessary components will take some time.</p>
+    <p>
+      <strong>NOTE:</strong> Names can no longer contain capital letters due to
+      npm naming constraints; therefore, type your app's name in lowercase.
+    </p>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20230202202100/gfg-react-improve-2.PNG"
+      alt="img"
+    />
+
+    <p>
+      <strong>Step 6:</strong> Now open the IDE of your choice, such as Visual
+      Studio Code, and navigate to the folder where you installed the React app.
+      The folder will be called Newfolder in the example above, and inside it
+      your project's name, reactapp, will be displayed. Use the terminal to
+      navigate to the folder for your app name.Use the command cd reactapp (the
+      name of your app).
+    </p>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20211015203027/img75.jpg"
+      alt="img"
+    />
+
+    <p>
+      <strong>Step 7:</strong> Execute the following command to launch your app:
+    </p>
+
+    <div>
+      <p>npm start</p>
+    </div>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20211015203947/img95.jpg"
+      alt="img"
+    />
+
+    <p>
+      When you execute the aforementioned command, a new tab in your browser
+      will open with the React logo as shown below:
+    </p>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20211015204506/img78.jpg"
+      alt="img"
+    />
+
+    <h2>Q.8 How to check version of React Js?</h2>
+
+    <p>
+      A front-end Javascript library called React is used to create single-page
+      applications (SPAs). Understanding the version can help you check for
+      updates, understand the features that are currently available, and make
+      sure that other dependencies are compatible. We will look at many ways to
+      check the ReactJS version in this article.
+    </p>
+
+    <p>
+      We'll go over three approaches to determine the React version in this
+      article.
+    </p>
+
+    <ul>
+      <li>package.json file usage</li>
+      <li>command line use</li>
+      <li>Using React's default import's version property</li>
+    </ul>
+
+    <h3>using the package.the json file</h3>
+
+    <p>
+      Our project's metadata is contained in the package.json file. When we
+      build our React project, it is automatically created. Using the command
+      listed below, we can produce a react application.
+    </p>
+
+    <div>
+      <p>npx create-react-app name_of_the_app</p>
+    </div>
+
+    <p>
+      Numerous name/value pairs in JSON format are found in the package.json
+      file. As seen in the image below, we can quickly check the version of
+      React by looking at the list of dependencies.
+    </p>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20210923161201/packageoutput.png"
+      alt=""
+    />
+
+    <h3>Command line usage:</h3>
+
+    <p>
+      The command listed below can be used on our command line to quickly check
+      the React version.
+    </p>
+
+    <div>
+      <p>npm view react version</p>
+    </div>
+
+    <p>
+      Below is a description of the output showing how to use the aforementioned
+      command on the command line.
+    </p>
+
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20210923161200/cmdversion.png"
+      alt=""
+    />
+
+    <strong>Using React's default import's version property: </strong>
+
+    <p>
+      The object that is imported by default from the React library has a
+      version attribute. This property can be used inside our JSX elements
+      whichever we like.
+    </p>
+
+    <p>Syntax: The version property's syntax is listed below.</p>
+
+    <div>
+      <p>import React from 'react'; let a = React.version</p>
+    </div>
+
+    <p>
+      Create a react project using the command that was covered in the article
+      above in order to follow along.
+    </p>
+
+    <p>
+      the App.js file The code below shows how to use the version property on a
+      React object and includes a description of the App.js file's contents.
+    </p>
+
+    <h3>Javascript</h3>
+
+    <div>
+      <p>
+        &lt;p&gt;<br />
+        import React from 'react';<br />
+        <br />
+        const App = () => {<br />
+        return &lt;h1&gt;<br />
+        We are currently using react version {React.version}<br />
+        &lt;/h1&gt;;<br />
+        }<br />
+        <br />
+        export default App;&lt;/p&gt;<br />
+      </p>
+    </div>
+
+    <p>
+      <strong>How to run the program:</strong> To launch the application, enter
+      the following command on the command line.
+    </p>
+
+    <div>
+      <p>npm start</p>
+    </div>
+
+    <p>
+      <strong>Output:</strong> Launch your browser and navigate to
+      http://localhost:3000 to view the output listed below.
+    </p>
+
+    <div>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20210923161159/browserversion.png"
+        alt="img"
+      />
+    </div>
+
+    <h2>Q. 9 How to change in components of React Js?</h2>
+
+    <p>
+      When working on a single page application, changing the state of a React
+      component is helpful since it allows the user to see new content without
+      having to reload the page.
+    </p>
+
+    <p>
+      The initial state value must be set in the constructor method, and the
+      element whose click causes the state to change must have its click event
+      handler defined. After that, give the function to the click handler and
+      use setState to modify the component's state inside the function. The
+      setState function is used to modify the component's state either directly
+      or through the callback method described below.
+    </p>
+
+    <strong> Syntax: </strong>
+
+    <div>
+      <p>this.setState({ stateName : new-state-value})</p>
+    </div>
+
+    <div>
+      <p>this.setState(st => { st.stateName = new-state-value })</p>
+    </div>
+
+    <p>
+      <strong>Example 1:</strong> Using this example, you can see how to modify
+      the component's state after a click.
+    </p>
+
+    <strong> index.js:</strong>
+
+    <div>
+      <p>
+        &lt;p&gt;import React from 'react' <br />
+        import ReactDOM from 'react-dom'<br />
+        import App from './App'<br />
+        <br />
+        ReactDOM.render(&lt;App /&gt;,
+        document.querySelector('#root'))&lt;/p&gt;<br />
+      </p>
+    </div>
+
+    <div>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20200826230707/ezgifcomvideotogif38.gif"
+        alt=""
+      />
+    </div>
+
+    <h2>Q.10 How to Create a List View in React Js?</h2>
+    <p>Check list-view-react app</p>
+
+    <h2>Q.11 Create Increment decrement state change by button click?</h2>
+    <p>Check list-view-react app</p>
+
+    <h3>
+      Q.12 Explain Life cycle in Class Component and functional component with
+      Hooks
+    </h3>
+    <p>
+      In this tutorial, we'll look at the lifecycle of a React component. A
+      component's lifecycle begins with its initialization and ends when it is
+      unmounted from the DOM. We will also go through each phase briefly.
+    </p>
+
+    <h3>Lifecycle of Components</h3>
+    <p>
+      Every React Component has its own lifecycle. A component's lifecycle can
+      be defined as a collection of functions that are invoked at various stages
+      of the component's existence. The definition is simple, but what do we
+      mean by different stages? A React Component can go through the four stages
+      listed below.
+    </p>
+
+    <ul>
+      <li>
+        Initialization: This is the stage at which the component is built with
+        the specified Props and default state. This is done in a Component
+        Class's constructor.
+      </li>
+      <li>
+        Mounting: This is the stage in which the JSX returned by the render
+        function is rendered.
+      </li>
+      <li>
+        Updating: Updating is the stage in which a component's state is updated
+        and the application is repainted.
+      </li>
+      <li>
+        Unmounting: As the name implies, this is the final step of the component
+        lifecycle in which the component is removed off the page.
+      </li>
+    </ul>
+
+    <p>
+      React provides developers with a collection of preset functions that, if
+      present, are invoked around specific events during the component's
+      lifespan. Developers are expected to override the functions with necessary
+      logic for them to operate properly. The gist is depicted in the diagram
+      below.
+    </p>
+
+    <h3>Functions of each Lifecycle Phase:</h3>
+
+    <strong> Initialization </strong>
+
+    <p>
+      The developer must define the props and initial state of the component
+      during this step, which is often done in the component's constructor. The
+      initialization procedure is described in the following code snippet.
+    </p>
+
+    <div>
+      <p>
+        class Clock extends React.Component { <br />
+        constructor(props) <br />
+        { <br />
+        // Calling the constructor of <br />
+        // Parent Class React.Component <br />
+        super(props); <br />
+        <br />
+        // Setting the initial state <br />
+        this.state = { date : new Date() }; <br />
+        } <br />
+        } <br />
+      </p>
+    </div>
+
+    <strong> Mounting </strong>
+    <p>
+      Mounting is the step of the component lifecycle in which the component's
+      initialization is done and the component is mounted on the DOM for the
+      first time on the webpage. Now, React follows a default approach in the
+      Naming Conventions of these predefined functions, where functions
+      containing "Will" indicate before some specified phase and functions
+      containing "Did" represent after that phase is completed. The mounting
+      phase is made up of two such specified functions, which are explained
+      below.
+    </p>
+
+    <p>In the constructor, first initialize the data and states.</p>
+    <p>
+      <strong>componentDidMount() Function:</strong> This function is called
+      immediately after the component is mounted on the DOM, i.e. after the
+      render() function is called for the first time.
+    </p>
+
+    <strong>Updation </strong>
+
+    <p>
+      React is a JS package that makes it simple to develop Active web pages.
+      Active web pages are now specific pages that respond to their user. Take,
+      for example, the GeeksforGeeks IDE webpage; the webpage behaves
+      differently with each user. User A could be writing C code in the Light
+      Theme while another User is writing Python code in the Dark Theme. This
+      dynamic behavior, which is largely dependent on the user, distinguishes
+      the webpage as an Active webpage. How does this relate to updating?
+      Updating is the process of updating a component's states and properties,
+      which is followed by user activities like as clicking, pushing a key on
+      the keyboard, and so on.The following are descriptions of functions that
+      are called at various points during the Updation phase.
+    </p>
+
+    <ul>
+      <li>
+        <strong>getDerivedStateFromProps:</strong> The static method
+        getDerivedStateFromProps(props, state) is called shortly before the
+        render() method in both the mounting and updating phases of React. It
+        takes as arguments updated props and the current state.
+      </li>
+
+      <div>
+        <p>
+          static getDerivedStateFromProps(props, state) {<br />
+          if(props.name !== state.name){<br />
+          //Change in props<br />
+          return{<br />
+          name: props.name<br />
+          };<br />
+          }<br />
+          return null; // No change to state<br />
+          }<br />
+        </p>
+      </div>
+      <li>
+        <strong>setState() Function:</strong> This is not a Lifecycle function
+        and can be called explicitly at any time. This function is used to
+        update a component's state. For further details, please see this
+        article.
+      </li>
+      <li>
+        <strong>shouldComponentUpdate() Function:</strong> By default, every
+        state or props update re-renders the page, however this is not always
+        wanted; sometimes it is preferred that updating the page does not
+        re-paint the page. The shouldComponentUpdate() function satisfies the
+        requirement by informing React whether or not the component's output
+        will be affected by the update. When new properties or states are
+        received, shouldComponentUpdate() is called before rendering an already
+        mounted component. If returned false, the further rendering stages will
+        be skipped. This function cannot be used in conjunction with
+        forceUpdate(). The Function accepts the new Props and State as arguments
+        and returns whether or not to re-render.
+      </li>
+      <li>
+        <strong>function getSnapshotBeforeUpdate():</strong> The
+        getSnapshotBeforeUpdate() function is called shortly before the DOM is
+        rendered. It is used to save the previous state values once the DOM is
+        modified.
+      </li>
+      <li>
+        <strong>componentDidUpdate() Function:</strong> Similarly, this function
+        is invoked after the component is rerendered, i.e. after the render()
+        function is executed following the update of State or Props.
+      </li>
+
+      <aside class="sep">
+        <strong>Unmounting </strong>
+
+        <p>
+          This is the final phase of the component's lifespan, in which the
+          component is unmounted from the DOM. This phase's single member is the
+          following function.
+        </p>
+      </aside>
+
+      <li>
+        <strong>componentWillUnmount() Function:</strong> This function is
+        called before the component is finally unmounted from the DOM, i.e. it
+        is called once before the component is removed from the page, indicating
+        the end of the lifecycle.
+      </li>
+    </ul>
+
+    <p>
+      So far, we've reviewed every predefined function in the component's
+      lifecycle, as well as the sequence in which the functions were executed.
+    </p>
+
+    <h3>Putting the lifecycle methods into action</h3>
+
+    <p>
+      Let's look at one more example to round up the subject while refining what
+      we've already discussed.
+    </p>
+    <p>
+      To begin, create a react app and change the index.js file in the src
+      folder.
+    </p>
+    <strong>index.js (source): </strong>
+
+    <div>
+      <p>
+        import React from 'react'; <br />
+        import ReactDOM from 'react-dom/client'; <br />
+        <br />
+        class Test extends React.Component { <br />
+        constructor(props) { <br />
+        super(props); <br />
+        this.state = { hello: "World!" }; <br />
+        } <br />
+        <br />
+        componentDidMount() { <br />
+        console.log("componentDidMount()"); <br />
+        } <br />
+        <br />
+        changeState() { <br />
+        this.setState({ hello: "Geek!" }); <br />
+        } <br />
+        <br />
+        render() { <br />
+        return ( <br />
+        &lt;div&gt; <br />
+        &lt;h1&gt;GeeksForGeeks.org, Hello{this.state.hello}&lt;/h1&gt; <br />
+        &lt;h2&gt; <br />
+        &lt;a onClick={this.changeState.bind(this)}&gt;Press Here!&lt;/a&gt;
+        <br />
+        &lt;/h2&gt; <br />
+        &lt;/div&gt;); <br />
+        } <br />
+        <br />
+        shouldComponentUpdate(nextProps, nextState) { <br />
+        console.log("shouldComponentUpdate()"); <br />
+        return true; <br />
+        } <br />
+        <br />
+        componentDidUpdate() { <br />
+        console.log("componentDidUpdate()"); <br />
+        } <br />
+        } <br />
+        <br />
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        <br />
+        root.render( <br />
+        &lt;Test /&gt; <br />
+        );
+      </p>
+      <br />
+    </div>
+    <div>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20230801123303/gfg.gif"
+        alt="img"
+      />
+    </div>
+
+    <h2>Q. 13 Create Shopping site home page with Styled- component</h2>
+    <p>Check list-view-react app</p>
+
+    <h2>
+      Q.14 Create React app with modules and lazy loading (Admin-user module
+      with child Router and outlet)
+    </h2>
+
+    <h3>What exactly is lazy loading?</h3>
+
+    <p>
+      What exactly is lazy loading? Lazy loading is a design approach used to
+      improve the performance of web and mobile apps. The idea behind lazy
+      loading is straightforward: initialize things that are vital to the user
+      interface immediately, then render noncritical stuff discreetly later.
+    </p>
+
+    <p>
+      When you browse a website or use an app, you almost certainly aren't
+      seeing all of the accessible content. You may never require certain
+      components depending on how you explore and utilize the program, and
+      loading unnecessary objects wastes time and processing resources. Lazy
+      loading allows you to render components on demand, increasing the
+      efficiency of your app and improving the user experience.
+    </p>
+
+    <h3>How to Implement Lazy Loading in React</h3>
+
+    <p>
+      React offers two capabilities that enable applying code-splitting and lazy
+      loading to React components relatively simple: React.lazy() and
+      React.Suspense.
+    </p>
+    <p>
+      The function React.lazy() allows you to render a dynamic import as a
+      regular component. Dynamic imports are a kind of code-splitting that is
+      essential for lazy loading. React.lazy(), a key feature of React 16.6,
+      eliminates the requirement for a third-party library such as
+      react-loadable.
+    </p>
+    <p>
+      React.Suspense lets you specify the loading indicator if the components in
+      the tree beneath it are not yet ready to render.
+    </p>
+
+    <p>
+      Before we get into React.lazy and React.Suspense, let's go through
+      code-splitting and dynamic imports, explain how they operate, and break
+      down how they help with lazy loading in React.
+    </p>
+
+    <h3>React code splitting</h3>
+
+    <p>
+      With the introduction of ES modules, transpilers like Babel, and bundlers
+      like webpack and Browserify, it is now possible to develop JavaScript
+      applications in a completely modular structure for easy maintenance. Each
+      module is often imported and merged into a single file called a bundle,
+      which is subsequently included on a webpage to load the complete app. As
+      the software develops in size, so does the bundle size, which eventually
+      affects page load speeds.
+    </p>
+    <p>
+      The process of breaking a huge bundle of code into numerous bundles that
+      may be loaded dynamically is known as code-splitting. This allows you to
+      prevent performance difficulties caused by big bundles without lowering
+      the amount of code in your program.
+    </p>
+
+    <h3>React dynamic imports</h3>
+    <p>
+      Dynamic imports, which use the import() syntax, are one technique to
+      separate code. Import() relies on JavaScript Promises to load a module. As
+      a result, it provides a promise that is either fulfilled with the loaded
+      module or denied if the module is unable to be loaded.
+    </p>
+
+    <p>
+      Here's an example of dynamically importing a module for a webpack-bundled
+      app:
+    </p>
+
+    <img
+      src="https://blog.logrocket.com/wp-content/uploads/2020/11/dynamic-import-webpack-1.png"
+      alt="img"
+    />
+
+    <p>
+      When webpack finds this syntax, it understands to construct a separate
+      bundle file for the moment library dynamically.
+    </p>
+    <p>
+      If you use a boilerplate like create-react-app or Next.js, code-splitting
+      using dynamic import() happens on the fly for React projects. If you're
+      using a custom webpack setup, you should see the webpack handbook for
+      instructions on configuring code-splitting. To correctly parse dynamic
+      import() in Babel, you must use the babel-plugin-syntax-dynamic-import
+      plugin.
+    </p>
+    <p>
+      Without further ado, let's get started with React.React and
+      lazy().Suspense
+    </p>
+
+    <h3>Making use of React.lazy()</h3>
+
+    <p>
+      React.lazy() makes it simple to create components that are loaded
+      dynamically but rendered as regular components. When the component is
+      rendered, the bundle containing it is automatically loaded.
+    </p>
+
+    <p>
+      React.lazy() accepts as an argument a method that must deliver a promise
+      after loading the component with import(). The resolved promise points to
+      a module with a default export that includes the React component.
+    </p>
+
+    <p>The syntax for using React.lazy() is as follows:</p>
+
+    <img
+      src="https://blog.logrocket.com/wp-content/uploads/2020/11/react.lazy_-1.png"
+      alt="img"
+    />
+    <h3>Making use of React.Suspense</h3>
+
+    <p>
+      React.lazy() components are only loaded when they need to be rendered. As
+      a result, while the lazy component is loading, you should show some form
+      of placeholder content, such as a loading indicator. This is precisely
+      what React.Suspense is intended for.
+    </p>
+    <p>
+      React.Suspense is a component used to surround sluggish components. A
+      single Suspense component can wrap several lazy components at different
+      hierarchy levels.
+    </p>
+    <p>
+      While all the lazy components are loaded, the Suspense component accepts a
+      fallback prop that accepts the React elements you want rendered as
+      placeholder content.
+    </p>
+
+    <img
+      src="https://blog.logrocket.com/wp-content/uploads/2020/11/react.suspense-1.png"
+      alt="img"
+    />
+
+    <p>
+      In this case, we developed a simple Loader component to provide as
+      fallback content for the sluggish Calendar component. We also added an
+      error barrier to show a message if the slow Calendar component does not
+      load.
+    </p>
+    <p>
+      I've wrapped the lazy Calendar import in another promise to mimic a
+      five-second delay. I also used a condition to either import the Calendar
+      component or deliver a promise that rejects to increase the odds of the
+      Calendar component failing to load.
+    </p>
+
+    <img
+      src="https://blog.logrocket.com/wp-content/uploads/2020/11/react.lazy-calendar-import-1.png"
+      alt="img"
+    />
+
+    <p>
+      The animation below demonstrates how the component will look when rendered
+      with React.lazy() and React.Suspense.
+    </p>
+
+    <img
+      src="https://blog.logrocket.com/wp-content/uploads/2018/10/react-lazy-load-demo.gif"
+      alt="img"
+    />
+
+    <h3>React components with named exports</h3>
+
+    <p>
+      React.lazy() currently does not support named exports for React
+      components. You must reexport named exports containing React components as
+      default exports in separate intermediate modules if you want to use them.
+    </p>
+
+    <p>
+      Assume you have OtherComponent as a named export in a module and want to
+      load OtherComponent with React.lazy(). You'd make an intermediate module
+      that reexports OtherComponent as the default export.
+    </p>
+
+    <p>Components.js:</p>
+
+    <img
+      src="https://blog.logrocket.com/wp-content/uploads/2020/11/react-lazy-components-js-1.png"
+      alt="img"
+    />
+
+    <p>OtherComponent.js:</p>
+
+    <img
+      src="https://blog.logrocket.com/wp-content/uploads/2020/11/react-lazy-other-components-js-1.png"
+      alt="img"
+    />
+
+    <p>
+      React.lazy() can now be used to load OtherComponent from the intermediate
+      module.
+    </p>
+
+    <h3>React's route-based lazy loading</h3>
+
+    <p>
+      You may implement route-based code splitting without utilizing an external
+      package by using React.lazy() and React.Suspense. Simply transform your
+      app's route components to lazy components and wrap all routes in a
+      Suspense component.
+    </p>
+
+    <p>
+      The code snippet below demonstrates route-based code splitting with the
+      Reach Router framework.
+    </p>
+
+    <div>
+      <p>
+        import { Router } from '@reach/router'; <br />
+        import Loading from './Loading'; <br />
+        <br />
+        const Home = React.lazy(() => import('./Home')); <br />
+        const Dashboard = React.lazy(() => import('./Dashboard')); <br />
+        const Overview = React.lazy(() => import('./Overview')); <br />
+        const History = React.lazy(() => import('./History')); <br />
+        const NotFound = React.lazy(() => import('./NotFound')); <br />
+        <br />
+        function App() { <br />
+        return ( <br />
+        &lt;div&gt; <br />
+        &lt;Suspense fallback={<Loading />}&gt; <br />
+        &lt;Router&gt; <br />
+        &lt;Home path="/" /&gt; <br />
+        &lt;Dashboard path="dashboard"&gt; <br />
+        &lt;Overview path="/" /&gt; <br />
+        &lt;History path="/history" /&gt; <br />
+        &lt;/Dashboard&gt; <br />
+        &lt;NotFound default /&gt; <br />
+        &lt;/Router&gt; <br />
+        &lt;/Suspense&gt; <br />
+        &lt;/div&gt; <br />
+        ) }
+      </p>
+    </div>
+
+    <h2>Q. 14 What is Redux?</h2>
+
+    <h3>React Redux</h3>
+
+    <p>
+      Redux is a free and open-source JavaScript library for managing
+      application state. The user interface in React is built with Redux. Dan
+      Abramov and Andrew Clark were the first to launch it in 2015.
+    </p>
+    <p>
+      React Redux is the official React Redux binding. It enables React
+      components to read data from a Redux Store and send Actions to the Store
+      in order to update data. Redux aids app scaling by providing a logical
+      mechanism to manage state via a unidirectional data flow model. React
+      Redux is fundamentally straightforward. It subscribes to the Redux store,
+      checks to see if the data your component requires has changed, and then
+      re-renders your component.
+    </p>
+    <p>
+      Flux influenced Redux. Redux researched the Flux architecture and
+      eliminated superfluous complexity.
+    </p>
+
+    <ul>
+      <li>Redux lacks the Dispatcher idea.</li>
+      <li>Redux only has one store, whereas Flux has several.</li>
+      <li>Store will receive and handle the Action objects directly.</li>
+    </ul>
+
+    <h3>Why should you use React Redux?</h3>
+
+    <p>The primary reasons for using React Redux are:</p>
+
+    <ul>
+      <li>
+        The official UI bindings for react applications are React Redux. It is
+        kept up to date with any API updates to ensure that your React
+        components behave normally.
+      </li>
+      <li>It promotes 'React' architecture.</li>
+      <li>
+        It performs various performance optimizations inside, allowing
+        components to re-render just when necessary.
+      </li>
+    </ul>
+
+    <h3>Redux Architecture</h3>
+
+    <img
+      src="https://static.javatpoint.com/tutorial/reactjs/images/react-redux-architecture.png"
+      alt="img"
+    />
+
+    <p>The components of the Redux architecture are described further below.</p>
+
+    <p>
+      <strong> STORE: </strong> A Store is a location where you can see the
+      current state of your application. It manages the application's state and
+      has a dispatch(action) method. It functions as the brain for all moving
+      parts of Redux.
+    </p>
+
+    <p>
+      <strong> ACTION:</strong> An action is a payload that is sent or
+      dispatched from the view. Reducers can read it. It is a simple object
+      designed to store information about the user's event. It contains
+      information such as the type of action, the time of occurrence, the
+      location of occurrence, its coordinates, and the state that it seeks to
+      modify.
+    </p>
+
+    <p>
+      <strong>Reducer :</strong>reads the payloads from the actions and then
+      updates the store via the state. To return is a pure function.
+    </p>
+
+    <h3>Installation Redux</h3>
+
+    <p>
+      <strong>Requirements:</strong>React Redux requires React 16.8.3 or a later
+      version.
+    </p>
+
+    <p>
+      Install the following command to utilize React Redux with a React
+      application.
+    </p>
+
+    <div><p>$ npm install redux react-redux --save</p></div>
+
+    <img
+      src="https://static.javatpoint.com/tutorial/reactjs/images/react-redux-installation.png"
+      alt="img"
+    />
+
+    <h2>Q. 15 What is Redux Thunk used for?</h2>
+
+    <h5>
+      Redux Thunk is middleware that allows you to return functions from Redux
+      rather than just actions. This enables delayed activities, such as working
+      with promises.
+    </h5>
+
+    <p>
+      One of the main applications for this middleware is to handle asynchronous
+      actions, such as utilizing axios to submit a GET request. We can use Redux
+      Thunk to dispatch those actions asynchronously and resolve each promise
+      that is returned.
+    </p>
+
+    <h3>Installation and Configuration</h3>
+
+    <p>
+      Redux Thunk may be installed from the command line using npm install
+      redux-thunk --save or yarn add redux-thunk.
+    </p>
+
+    <p>
+      Because it is a Redux utility, you must also have Redux installed. It is
+      activated after installation by calling applyMiddleware():
+    </p>
+
+    <div>
+      <p>
+        import { createStore, applyMiddleware } from 'redux'; <br />
+        import thunk from 'redux-thunk'; <br />
+        import rootReducer from './reducers/index'; <br />
+        <br />
+        const store = createStore( <br />
+        rootReducer, <br />
+        applyMiddleware(thunk) <br />
+        );
+      </p>
+
+      <h3>How to Make Use of Redux Thunk</h3>
+
+      <p>
+        After installing Redux Thunk and include it in your project with
+        applyMiddleware(thunk), you can begin dispatching actions
+        asynchronously.
+      </p>
+
+      <p>Here's an example of a simple increment counter:</p>
+    </div>
+
+    <div>
+      <p>
+        const INCREMENT_COUNTER = 'INCREMENT_COUNTER'; <br />
+        <br />
+        function increment() { <br />
+        return { <br />
+        type: INCREMENT_COUNTER <br />
+        }; <br />
+        } <br />
+        <br />
+        function incrementAsync() { <br />
+        return dispatch => { <br />
+        setTimeout(() => { <br />
+        // You can invoke sync or async actions with `dispatch` <br />
+        dispatch(increment()); <br />
+        }, 1000); <br />
+        }; <br />
+        }
+      </p>
+    </div>
+
+    <p>
+      Here's how to configure success and failure behaviors after polling an
+      API:
+    </p>
+
+    <div>
+      <p>
+        const GET_CURRENT_USER = 'GET_CURRENT_USER'; <br />
+        const GET_CURRENT_USER_SUCCESS = 'GET_CURRENT_USER_SUCCESS'; <br />
+        const GET_CURRENT_USER_FAILURE = 'GET_CURRENT_USER_FAILURE'; <br />
+        <br />
+        const getUser = () => { <br />
+        return (dispatch) => { //nameless functions <br />
+        // Initial action dispatched <br />
+        dispatch({ type: GET_CURRENT_USER }); <br />
+        // Return promise with success and failure actions <br />
+        return axios.get('/api/auth/user').then( <br />
+        user => dispatch({ type: GET_CURRENT_USER_SUCCESS, user }), <br />
+        err => dispatch({ type: GET_CURRENT_USER_FAILURE, err }) <br />
+        ); <br />
+        }; <br />
+        };
+      </p>
+    </div>
+
+    <h2>
+      Q. 16 What is Pure Component? When to use Pure Component over Component?
+    </h2>
+
+    <p>
+      A component is a fundamental building part in React. In other words, every
+      application you create in React will be built up of bits known as
+      components. However, React has two kinds of Components:
+    </p>
+
+    <p>
+      <strong>1. React.PureComponent:</strong> It is one of the most important
+      methods for optimizing React apps. There is no need for the
+      shouldComponentUpdate() Lifecycle Method when utilizing the pure component
+      because the ReactJS Pure Component Class checks existing state and props
+      with new props and states to determine if the component should re-render
+      or not.
+    </p>
+    <p>
+      <strong>2. React.Component:</strong>However, React.Component re-renders
+      itself whenever the props supplied to it change, the parent component
+      re-renders, or the shouldComponentUpdate() method is triggered. The React
+      application is not optimized. They are simple and quick to construct, and
+      they are ideal for very small UI views where a re-render would be
+      insignificant. They offer clearer code and fewer files to manage.
+    </p>
+
+    <p><strong>When should you use React.PureComponent?</strong></p>
+
+    <p>
+      You have the option of using React.If any of the following circumstances
+      are met, PureComponent will be preferred over React.Component:
+    </p>
+
+    <ul>
+      <li>The state/properties object should be immutable.</li>
+      <li>There should be no hierarchy between states and properties.</li>
+      <li>When data changes, you should call forceUpdate().</li>
+    </ul>
+
+    <h3>Making a React Application:</h3>
+
+    <p>
+      <strong> Step 1: </strong>Run the following command to create a React
+      application:
+    </p>
+
+    <div>
+      <p>npx create-react-app functiondemo</p>
+    </div>
+
+    <p>
+      <strong> Step 2: </strong> After creating your project folder, i.e.
+      functiondemo, use the following command to navigate to it:
+    </p>
+    <div>
+      <p>cd functiondemo</p>
+    </div>
+
+    <p><strong>Project Structure:</strong> It will look like the following.</p>
+    <img
+      src="https://media.geeksforgeeks.org/wp-content/uploads/20201212224551/ProjectStructure.png"
+      alt="img"
+    />
+
+    <p>
+      <strong>In this example</strong>, we will create a name color application
+      that changes the text color when the component is presented in the DOM
+      tree.
+    </p>
+    <p>
+      <strong>App.js:</strong> Add the following code to the App.js file. App is
+      our default component, and that is where we have written our code.
+    </p>
+    <p><strong>React.Component usage:</strong></p>
+
+    <div>
+        <p>import React from 'react';   <br>
+  
+            class Comp1 extends React.Component {   <br>
+              render() {   <br>
+                console.log('Child Component is called');   <br>
+                return <h1>{this.props.value}</h1>;   <br>
+              }   <br>
+            }   <br>
+                <br>
+            class App extends React.Component {   <br>
+              state = { color: 'black' };   <br>
+              render() {   <br>
+                return (   <br>
+                  &lt;div style={{ color: this.state.color }}&gt;  <br> 
+                    &lt;Comp1 value="Rahul" /&gt;   <br>
+                    &lt;button onClick={() => this.setState({ color: 'green' })}>   <br>
+                      Change Color   <br>
+                    &lt;/button&gt;   <br>
+                  &lt;/div&gt;   <br>
+                );   <br>
+              }   <br>
+            }   <br>
+            export default App; </p>
+    </div>
+
+    <p><strong>Steps for Running the Application:</strong> Run the program from the project's root directory by issuing the following command:
+    </p>
+
+    <div>
+        <p>npm start</p>
+    </div>
+
+    <p><strong>Output:</strong>Now, open your browser and navigate to http://localhost:3000/; you should see the following output:
+    </p>
+
+    
+    <div>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210120235918/ezgifcomgifmaker.gif" alt="img" />
+    </div>
+    
+    <h3>Making use of React.PureComponent:
+    </h3>
+
+    <div>
+        <p>
+            import React from 'react'; <br>
+              <br>
+            class Comp1 extends React.PureComponent { <br>
+              render() { <br>
+                console.log('Child Component is called'); <br>
+                return <h1>{this.props.value}</h1>; <br>
+              } 
+            } 
+              <br>
+            class App extends React.Component { <br>
+              state = { color: 'black' }; <br>
+              render() { <br>
+                return ( <br>
+                  &lt;div style={{ color: this.state.color }}&gt; <br>
+                    &lt;Comp1 value="Rahul" /&gt; <br>
+                    &lt;button onClick={() => this.setState({ color: 'green' })}&gt; <br>
+                      Change Color <br>
+                    &lt;/button&gt; <br>
+                  &lt;/div&gt; <br>
+                ); <br>
+              } <br>
+            } <br>
+            export default App; </p>
+    </div>
+
+    <p><strong>Steps for Running the Application: 
+    </strong>Run the program from the project's root directory by issuing the following command:</p>
+
+    <div>
+        <p>npm start</p>
+    </div>
+
+    <p><strong>Output:</strong>Now, open your browser and navigate to http://localhost:3000/; you should see the following output:
+    </p>
+
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210120235936/ezgifcomgifmaker1.gif" alt="img">
+
+    <h2>Q. 17 What is the second argument that can optionally be passed tosetState and what is
+      its purpose?</h2>
+  
+     <h3>In React.js, use the Optional Second Parameter of setState.
+  </h3>
+  
+  <p>Functions in my code that relied on a state would render with an earlier state rather than the updated one. This is due to the fact that setState is asynchronous. If I tried to console.log() a state before and after changing it, I would wind up logging the prior state. Assume that the value of event.target.value was 'hooray' and that the remainder of the App Component was properly configured in the following code snippet:
+  </p>
+  
+  <strong>Example 1:</strong>
+  
+  <div>
+      <p>
+          class App extends Component {    <br>
+          this.state = {   <br>
+            sampleItem: 'test',   <br>
+          }   <br>
+         handleChange = (event) => {   <br>
+             <br>
+           console.log(this.state.sampleItem)    // step 1   <br>
+             <br>
+           this.setState({                      <br>
+             sampleItem: event.target.value      // step 2   <br>
+           })   <br>
+          
+           console.log(this.state.sampleItem)    // step 3   <br>
+        };
+      </p>
+    </div>
+      
+  
+      <p>This code would generate the following output:</p>
+  
+      <div>
+          <p>test <br>
+              test</p>
+      </div>
+  
+      <p>Again, this is due to the fact that setState is asynchronous. When handleChange is called in response to an event, steps 1 and 3 occur before the state may be altered in step 2. Because sampleItem hasn't been updated from 'test' to 'hooray' yet, 'test' is printed twice. </p>
+
+      <p>To address this issue, we may provide setState with an optional second parameter that is a callback function. This function is called immediately after setState completes setting a new state. If we rearrange our code as follows:</p>
+
+      <strong>Example 2:</strong>
+
+      <div>
+        <p>
+          class App extends Component {     <br>
+          this.state = {    <br>
+              sampleItem: 'test',    <br>
+            }    <br>
+          handleChange = (event) => {    <br>
+                <br>
+             console.log(this.state.sampleItem)              // step 1    <br>
+                <br>
+             this.setState({                       <br>
+               sampleItem: event.target.value                // step 2    <br>
+             }, () => console.log(this.state.sampleItem))    // step 3    <br>
+          };    <br>
+        </p>
+      </div>
+
+      <p>We get the desired outcome printed out:
+      </p>
+
+      <div>
+        <p>test <br>
+          hooray</p>
+      </div>
+
+
+      <p>As the optional second parameter in Example 2, I used an anonymous arrow function. This anonymous function is invoked immediately after setState completes setting the new state to 'hooray' and prints out the new state.
+        </p>
+
+
+      <p>  This solves the asynchronous nature of setState. Rather than merely printing out a new state, we could easily construct a more complicated callback function that makes use of our new state. So, in Example 2, step 3 may look like this:</p>
+    
+
+
+      <div>
+        <p>() => SomeComplexCallbackFunction(this.state.sampleItem)
+        </p>
+      </div>
+
+      <p>This enables us to conduct actions quickly following a state change and be confident that whatever data we return will use the most recent state.
+      </p>
+
+
+      <h2>Q. 18  Create a Table and Search data from table using React Js?</h2>
+
+      <p></p>
+
+
+      <h2>Q.19 Create Login registration with CRUD Application using API (Redux)its purpose?</h2>
+
+      <h3>Contents </h3>
+
+      <ol>
+        <li> Setup </li>          
+        <li>Adding users from the state</li>
+        <li>  Creating a new user</li>
+        <li>  Changing a user's information</li>
+        <li>removing a user</li>
+        <li> Asynchronously loading new users</li>
+      </ol>
+
+      <h3>React Context API vs. Redux & useReducer
+      </h3>
+
+      <h3>Benefits of Redux
+      </h3>
+
+      <p>Why would you add another library for state management? I thought React already managed the state? That is correct, but imagine you have multiple components and pages, each of which must fetch data from various APIs and data sources and manage the state of how the user interacts with that data and the interface. Your app's state can quickly devolve into chaos. The following are the primary advantages that I have discovered:
+        </p>
+
+        <ul>
+          <li>Redux stores all of the state in one store, the single source of truth.</li>
+          <li>  Predictable: Because your program uses a single store, syncing your current state and actions with other portions of your app is simple.</li>
+          <li>Maintainability: Your code will be easier to maintain because Redux provides explicit standards on how to structure it.
+          </li>
+        </ul>
+
+        <h3>1. Setup</h3>
+
+        <p>Let's begin by making a new React app with the default settings: <span>$ npx create-react-app redux-crud-app</span></p>
+
+        <p>To begin, remove all files except App.js and index.js from the /src folder. Clear out App.js and just return one word for the time being. <span>$ npm run start</span> will launch the app.</p>
+
+
+
+
+
+
+
+
+
+        <h3>2. Adding users from the state</h3>
+        <h3>3. Creating a new user</h3>
+        <h3>4.  Changing a user's information</h3>
+        <h3>5. removing a user</h3>
+          <h3>6. Asynchronously loading new users</h3>
+
+
+          <h3>App.js</h3>
+
+
+          <div>
+            <p>
+              function App() {    <br>
+              return (    <br>
+                &lt;h1&gt;Hi&lt;/h1&gt;    <br>
+              );    <br>
+            }    <br>
+                <br>
+            export default App;
+          </p>
+          </div>
+
+          <p>Let's include a small CSS library to make our app appear great. For this article, I'll be using Skeleton CSS. Simply add the following line before the closing tag to index.html:</p>
+            <span>&lt;link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" /&gt;</span>
+          
+
+          <p>On your localhost, the text should now be formatted. As a development dependency, let's install the standard React router package to handle our various pages:</p>
+
+            <span>$ npm install react-router-dom --save
+            </span>
+
+          
+
+          <h3>App.js</h3>
+
+          <div>
+            <p>import { Route, BrowserRouter as Router, Switch } from "react-router-dom";    <br>
+    <br>
+              import React from "react";    <br>
+              import { UserList } from "./features/users/UserList";    <br>
+                  <br>
+              export default function App() {    <br>
+                return (    <br>
+                  &lt;Router&gt;    <br>
+                    &lt;div&gt;    <br>
+                      &lt;Switch&gt;    <br>
+                        &lt;Route path="/"&gt;    <br>
+                          &lt;UserList /&gt;    <br>
+                        &lt;/Route&gt;    <br>
+                        &lt;Route path="/add-user"&gt;    <br>
+                          &lt;h1&gt;Add user&lt;/h1&gt;    <br>
+                        &lt;/Route&gt;    <br>
+                        &lt;Route path="/edit-user"&gt;    <br>
+                          &lt;h1&gt;Edit user&lt;/h1&gt;    <br>
+                        &lt;/Route&gt;    <br>
+                      &lt;/Switch&gt;    <br>
+                    &lt;/div&gt;    <br>
+                  &lt;/Router&gt;    <br>
+                );    <br>
+              }</p>
+          </div>
+
+          <p>And add a the UsersList component for the layout:</p>
+
+          <h3>2. Loading users from state</h3>
+
+          <p>First we have to add the redux store to our application. Let's install react-redux and the redux toolkit:</p>
+            <span> $ npm install @reduxjs/toolkit react-redux --save</span>
+
+            <p> Then create a file store.js with the following code:</p>
+
+            <h3>store.js</h3>
+
+            <div>
+              <p>
+                import { configureStore } from "@reduxjs/toolkit"; <br>
+                <br>
+                export default configureStore({<br>
+                  reducer: {},<br>
+                });<br>
+              </p>
+            </div>
+
+            <p>We'll add Redux functions later to alter the state (reducers) here. We must now wrap our application within the store using Redux's provider wrapper:</p>
+
+            <h3>index.js</h3>
+
+            <div>
+              <p>
+                import App from "./App";      <br>
+                import { Provider } from "react-redux";      <br>
+                import React from "react";      <br>
+                import ReactDOM from "react-dom";      <br>
+                import store from "./store";      <br>
+                      <br>
+                ReactDOM.render(      <br>
+                  &lt;Provider store={store}&gt;      <br>
+                    &lt;App /&gt;      <br>
+                  &lt;/Provider&gt;,      <br>
+                  document.getElementById("root")      <br>
+                );      <br>
+              </p>
+            </div>
+
+            <p>Next, let's create the redux state and populate it with our users. Then, within our UserList component, we'll retrieve this state.
+            </p>
+
+            <h3>3. Adding a new user</h3>
+
+            <div>
+              <p>import { useState } from "react";   <br>
+   <br>
+                export function AddUser() {   <br>
+                  const [name, setName] = useState("");   <br>
+                  const [email, setEmail] = useState("");   <br>
+                   <br>
+                  const handleName = (e) => setName(e.target.value);   <br>
+                  const handleEmail = (e) => setEmail(e.target.value);   <br>
+                   <br>
+                  return (   <br>
+                    &lt;div className="container"&gt;   <br>
+                      &lt;div className="row"&gt;   <br>
+                        &lt;h1&gt;Add user&lt;/h1&gt;   <br>
+                      &lt;/div&gt;   <br>
+                      &lt;div className="row"&gt;   <br>
+                        &lt;div className="three columns"&gt;   <br>
+                          &lt;label for="nameInput"&gt; Name &lt;/label&gt;   <br>
+                          &lt;input   <br>
+                            className="u-full-width"   <br>
+                            type="text"   <br>
+                            placeholder="test@mailbox.com"   <br>
+                            id="nameInput"   <br>
+                            onChange={handleName}   <br>
+                            value={name}   <br>
+                          /&gt;   <br>
+                          &lt;label for="emailInput">Email&lt;/label&gt;   <br>
+                          &lt;input   <br>
+                            className="u-full-width"   <br>
+                            type="email"   <br>
+                            placeholder="test@mailbox.com"   <br>
+                            id="emailInput"   <br>
+                            onChange={handleEmail}   <br>
+                            value={email}   <br>
+                          /&gt;   <br>
+                          &lt;button className="button-primary">Add user&lt;/button&gt;   <br>
+                        &lt;/div&gt;   <br>
+                      &lt;/div&gt;   <br>
+                    &lt;/div&gt;   <br>
+                  );   <br>
+                }</p>
+            </div>
+
+            <p>We want to add the user to the state and return the user to the UserList component when they submit. If something goes wrong, we'll display an error message. </p>
+
+            <p>To begin, we will add a method/function to our Redux user slice. This method, which Redux refers to as a reducer, is used to change the state. Inside reducers, our function receives the user state and the action, in this case the user form field values.</p>
+
+            <p>Redux generates an action for us to use when using this function.</p>
+
+
+            <h3> 4. Editing a user</h3>
+
+            <p>To edit a user, we'll first link our edit button to the dynamic /edit-user/id page within our UserList component:
+            </p>
+
+            <div>
+              &lt;p&gt;&lt;Link to={`/edit-user/${id}`}&gt;  <br>
+                &lt;button&gt;Edit&lt;/button&gt; <br>
+             &lt;/Link&gt;&lt;/p&gt; <br>
+            </div>
+
+            <p>The new reducer will then be added to our Redux slice. It will look for the user in our state and update it if one exists.
+            </p>
+
+            <h3>usersSlice.js</h3>
+
+            <div>
+              <p>
+                const usersSlice = createSlice({   <br>
+                name: "users",   <br>
+                initialState,   <br>
+                reducers: {   <br>
+                  userAdded(state, action) {   <br>
+                    state.push(action.payload);   <br>
+                  },   <br>
+                  userUpdated(state, action) {   <br>
+                    const { id, name, email } = action.payload;   <br>
+                    const existingUser = state.find((user) => user.id === id);   <br>
+                    if (existingUser) {   <br>
+                      existingUser.name = name;   <br>
+                      existingUser.email = email;   <br>
+                    }   <br>
+                  },   <br>
+                },   <br>
+              });   <br>
+            </p>
+            </div>
+
+            <p>Our EditUser.jsx file will look quite similar to AddUser.jsx, except that now we utilize the useLocation hook from react-router-dom to get the user id from the URL path:
+            </p>
+
+            <h3> 5. Deleting a user</h3>
+
+            <p>I'd like to invite you to solve this one for yourself! It will be a good exercise to put what we've learnt so far into practice. </p>
+
+            <p>My answer for the reducer is as follows:</p>
+
+            <div>
+              <p>userDeleted(state, action) { <br>
+                const { id } = action.payload; <br>
+                const existingUser = state.find((user) => user.id === id); <br>
+                if (existingUser) { <br>
+                  return state.filter((user) => user.id !== id); <br>
+                } <br>
+              },</p>
+            </div>
+
+            <h3>6. Loading new users asynchronously</h3>
+
+            <p>Warning: the following section is a little more difficult but extremely beneficial to understand!</p>
+
+              <p> A useful feature would be the ability to import users from an external API. We'll make advantage of this free one: https://jsonplaceholder.typicode.com/users.
+              </p>
+
+              <p>  Only synchronous code is executed by Redux. To handle async code, it was most popular to utilize a redux-thunk, which is simply a basic function that accepts async code as actions.</p>
+
+              <p>   Redux now provides a built-in capability for adding async code. Many tutorials still require redux-thunk, however redux's new configureStore function already includes this.</p>
+
+              <p> Let us now include the API fetch in our usersSlice:</p>
+
+              <div>
+                <p>export const fetchUsers = createAsyncThunk("fetchUsers", async () => {  <br>
+                  const response = await fetch("https://jsonplaceholder.typicode.com/users");  <br>
+                  const users = await response.json();  <br>
+                  return users;
+                });</p>
+              </div>
+
+              <p>Then, within our slice, we'll add a property called <span>extraReducers</span>, which will have a couple of functions to handle the API's return:
+              </p>
+
+              <ul>
+                <li>pending </li>
+                <li>  fulfilled</li>
+                <li> rejected</li>
+              </ul>
+
+              <p>Our API call returns a Promise, which is an object representing the state of an asynchronous activity, in this case an API call. We'll update our status based on the Promise status.
+              </p>
+
+              <div>
+                <p>const usersSlice = createSlice({    <br>
+                  name: "users",    <br>
+                  initialState: {    <br>
+                    entities: [],    <br>
+                    loading: false,    <br>
+                  },    <br>
+                  reducers: { ... },    <br>
+                  extraReducers: {    <br>
+                    [fetchUsers.pending]: (state, action) => {    <br>
+                      state.loading = true;    <br>
+                    },    <br>
+                    [fetchUsers.fulfilled]: (state, action) => {    <br>
+                      state.loading = false;    <br>
+                      state.entities = [...state.entities, ...action.payload];    <br>
+                    },    <br>
+                    [fetchUsers.rejected]: (state, action) => {    <br>
+                      state.loading = false;    <br>
+                    },    <br>
+                  },    <br>
+                });</p>
+              </div>
+
+              <p>This array of users should be retrieved as soon as our program loads and whenever a user clicks the LOAD USERS button.</p>
+              <p> Let's dispatch it before our component inside index to load it as soon as our app loads.js:</p>
+
+              <span>store.dispatch(fetchUsers())</span>
+
+              <p>And to dispatch it on our button:</p>
+
+              <span>onClick={() => dispatch(fetchUsers())}</span>
+
+              <p>That's it! We finished building our CRUD app using React, Redux and Hooks.</p>
+
+
+
+
+  </section>
+
+  </body>
+</html>

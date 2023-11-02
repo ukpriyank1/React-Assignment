@@ -1,0 +1,100 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.MainSubHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Row-Sub-Header {
+  width: 100%;
+  border-bottom: 1px solid silver;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 70px;
+}
+
+.leftItems {
+  display: flex;
+  column-gap: 25px;
+}
+.CategoryIcon {
+  margin-right: 5px;
+}
+
+.ExpandMoreIcon {
+  margin-left: 5px;
+}
+
+.all_catgry {
+  font-size: 11px;
+  background-color: rgba(0, 220, 0, 1);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: 700;
+
+  padding: 5px 10px;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 700;
+  color: grey;
+
+  display: flex;
+  align-items: center;
+}
+
+.LocalOfferIcon {
+  margin-right: 5px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  column-gap: 10px;
+}
+
+ul .list {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+ul .list:first-child {
+  color: rgba(0, 220, 0, 1);
+}
+
+.SupportAgentIcon {
+  width: 235px;
+}
+
+.contactUs h3 {
+  font-size: 14px;
+}
+
+.contactUs p {
+  font-size: 8px;
+}
+
+.c_support {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}

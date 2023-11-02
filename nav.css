@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.rowSubNav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aquamarine; */
+  align-items: center;
+  padding: 5px 70px;
+  border-bottom: 1px solid silver;
+}
+
+.sub-nav > ul {
+  display: flex;
+  list-style: none;
+  column-gap: 10px;
+}
+
+.sub-nav > ul > li > a {
+  text-decoration: none;
+  font-size: 12px;
+  color: silver;
+}
+
+.sub-nav > .detail {
+  font-size: 12px;
+  color: silver;
+  font-weight: 500;
+}
+
+.sub-nav > .detail > a {
+  text-decoration: none;
+  color: green;
+  margin-left: 3px;
+  font-weight: 500;
+}
+
+.sub-nav > .d-info {
+  display: flex;
+  column-gap: 15px;
+}
+
+.sub-nav > .d-info > p {
+  font-size: 12px;
+  color: silver;
+  font-weight: 500;
+}
+
+.sub-nav > .d-info > p > span {
+  color: green;
+  font-weight: 500;
+  margin-left: 2px;
+}
+
+.sub-nav > .d-info > div {
+  font-size: 13px;
+  color: silver;
+}
+
+.sub-nav .lang {
+  display: flex;
+  align-items: center;
+}
+
+.sub-nav .languageIcon {
+  font-size: 15px;
+}
+
+.sub-nav .currency {
+  display: flex;
+  align-items: center;
+}
+
+.sub-nav .expandmoreicon {
+  font-size: 14px;
+}

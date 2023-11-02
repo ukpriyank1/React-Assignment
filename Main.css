@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.center_items {
+  display: flex;
+  justify-content: center;
+}
+
+.Main_background {
+  width: 90%;
+  height: 70vh;
+  background-image: url("https://wallpaperaccess.com/full/4461833.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: red; */
+  border-radius: 20px;
+
+  margin: 30px 0;
+  padding: 60px 80px;
+}
+
+.Main_background h2 {
+  font-size: 50px;
+  color: #ffffff;
+  width: 50%;
+  line-height: 50px;
+
+  font-weight: 400;
+}
+
+.Main_background p {
+  font-size: 18px;
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+.Main_background input {
+  width: 300px;
+  height: 45px;
+
+  border-radius: 30px;
+  padding: 0 40px;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.Main_background button {
+  padding: 13px 30px;
+  border: none;
+  outline: none;
+
+  border-radius: 30px;
+  background-color: rgba(0, 205, 0, 1);
+  font-weight: 500;
+  color: #ffffff;
+  position: absolute;
+  left: 28%;
+}
+
+.Main_background .SendIcon {
+  position: absolute;
+  left: 8%;
+  top: 65.5%;
+  color: grey;
+  z-index: 99;
+  font-size: 20px;
+}
